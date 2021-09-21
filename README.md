@@ -25,21 +25,21 @@
 
 ### API Setup
 
-  1. cd api_using_nodejs
+  1. `cd api_using_nodejs`
   2. open config.js file, adjust db config/credential
-  3. npm install
-  4. node index.js
-  5. the console should say "App listening at http://localhost:8000"
+  3. install all dependencies, run `npm install`
+  4. to start the API, run `node index.js`
+  5. the console should say `App listening at http://localhost:8000`
 
 ### Frontend Setup
 
-  1. cd frontend_using_reactjs
-  2. yarn install
-  3. yarn start
-  4. access the app via http://localhost:3000
+  1. `cd frontend_using_reactjs`
+  2. install all dependencies, run `yarn install`
+  3. to start the react app, run `yarn start`
+  4. access the app via default path `http://localhost:3000`
 
 ### Contact
 
-  marjuqi[dot]rahmat[at]gmail[dot]com
+  **marjuqi[dot]rahmat[at]gmail[dot]com**
 
 
