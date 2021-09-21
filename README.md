@@ -1,5 +1,8 @@
 # reactjs_nodejs_app_template
 
+ This repo is a simulation/template for an application that use React as the frontend, Nodejs as the API and Mysql as the Database.
+
+
 ### My Local Env
 
   **mysql**
