@@ -1,9 +1,10 @@
 import {
-    GETUSERS, CREATENEWUSER, EDITUSER, REMOVEUSER
+    GETUSERS, GETUSERDETAIL, CREATENEWUSER, EDITUSER, REMOVEUSER
 } from './users.types';
 
 const INITIAL_STATE = {
-    users: []
+    users: [],
+    userDetail: null
 };
 
 const reducer = (state = INITIAL_STATE, action) => {
@@ -24,6 +25,11 @@ const reducer = (state = INITIAL_STATE, action) => {
         return {
             ...state,
             users: action.payload
+        };
+    case GETUSERDETAIL:
+        return {
+            ...state,
+            userDetail: action.payload
         };
     default: return state;
     }
