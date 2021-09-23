@@ -1,7 +1,25 @@
 import bridge from '../../bridge';
 import {
-    ERRORS, GETUSERS, CREATENEWUSER, EDITUSER, REMOVEUSER
+    ERRORS, GETUSERS, GETUSERDETAIL, CREATENEWUSER, EDITUSER, REMOVEUSER
 } from './users.types';
+
+export const getUserDetail = (userId) => async (dispatch) => {
+    try {
+        const res = await bridge.get(`/users/${userId}`);
+        if (res.status === 200) {
+            dispatch({
+                type: GETUSERDETAIL,
+                payload: res.data.data
+            });
+        }
+        return res;
+    } catch (e) {
+        dispatch({
+            type: ERRORS,
+            payload: e
+        });
+    }
+};
 
 export const getUsers = (payload) => async (dispatch) => {
     const paramsObj = {};
